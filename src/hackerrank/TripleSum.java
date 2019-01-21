@@ -14,26 +14,22 @@ public class TripleSum {
 	}
 	
 	static long triplets(int[] a, int[] b, int[] c) {
-		long count = 0;
-		
 		Arrays.sort(a);
-		Arrays.sort(b);
-		Arrays.sort(c);
-		
-		int ai=a.length-1, bi=0, ci=c.length-1;
-		
-		while(ai>-1){
-			while(bi<b.length && (b[bi]<a[ai] && b[bi]<c[ci])){
-				bi++;
-			}
-			if(bi<b.length){
-				count = count + (b.length-bi)*a.length*c.length;
-			}
-			
-		}
-		
-		
-		return count;
+        Arrays.sort(b);
+        Arrays.sort(c);
+        int a_count=0, c_count=0;
+        int a_ctr=0, c_ctr=0;
+        for(int i=0; i<b.length; i++){
+            while(a[a_ctr]<b[i]){
+                a_count++;
+                a_ctr++;
+            }
+            while(c[c_ctr]<b[i]){
+                c_count++;
+                c_ctr++;
+            }
+        }
+        return a_count*c_count;
 	}
 	
 	
