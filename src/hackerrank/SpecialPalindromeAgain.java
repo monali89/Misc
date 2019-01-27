@@ -1,4 +1,4 @@
-package practice;
+package hackerrank;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -52,7 +52,7 @@ public class SpecialPalindromeAgain {
 				 int currCnt = charCnt.get(arr[i]);
 				 charCnt.put(arr[i], currCnt+1);
 			 }else{
-				 charCnt.putIfAbsent(arr[i], 1);
+				 charCnt.put(arr[i], 1);
 			 }
 		 }
 		 

@@ -1,4 +1,4 @@
-package practice;
+package hackerrank;
 
 import java.util.HashMap;
 
@@ -24,7 +24,7 @@ static void checkMagazine2(String[] magazine, String[] note) {
                 int count = nt.get(note[i]);
                 nt.put(note[i],(Integer)count+1);
             }else{
-                nt.putIfAbsent(note[i], (Integer)1);
+                nt.put(note[i], (Integer)1);
             }            
         }
         
@@ -33,7 +33,7 @@ static void checkMagazine2(String[] magazine, String[] note) {
                 int count = mag.get(magazine[i]);
                 mag.put(magazine[i],(Integer)count+1);
             }else{
-                mag.putIfAbsent(magazine[i], (Integer)1);
+                mag.put(magazine[i], (Integer)1);
             }            
         }
         

@@ -1,4 +1,4 @@
-package practice;
+package hackerrank;
 
 public class CommomChild {
 

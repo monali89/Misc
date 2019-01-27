@@ -1,4 +1,4 @@
-package practice;
+package hackerrank;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -34,7 +34,7 @@ public class CountTriplets {
 			if(map.containsKey(arr.get(i))){
 				map.put(arr.get(i), map.get(arr.get(i))+1);
 			}else{
-				map.putIfAbsent(arr.get(i), 1);
+				map.put(arr.get(i), 1);
 			}
 		}
 		

@@ -1,4 +1,4 @@
-package practice;
+package hackerrank;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -30,7 +30,7 @@ public class FrequencyQueries {
 					int count = str.get(num);
 					str.put(num, count+1);
 				}else{
-					str.putIfAbsent(num, 1);
+					str.put(num, 1);
 				}
 				break;
 			case 2:

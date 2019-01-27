@@ -1,4 +1,4 @@
-package practice;
+package hackerrank;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -75,7 +75,7 @@ public class Any {
 
 		if (s1.length() < s2.length()) {
 			for (int i = 0; i < s1Arr.length; i++) {
-				result.putIfAbsent(s1Arr[i], (Boolean) false);
+				result.put(s1Arr[i], (Boolean) false);
 			}
 			System.out.println("result: " + result.toString());
 			for (int i = 0; i < s2Arr.length; i++) {
@@ -87,7 +87,7 @@ public class Any {
 
 		} else {
 			for (int i = 0; i < s2Arr.length; i++) {
-				result.putIfAbsent(s2Arr[i], (Boolean) false);
+				result.put(s2Arr[i], (Boolean) false);
 			}
 			System.out.println("result: " + result.toString());
 

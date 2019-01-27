@@ -1,4 +1,4 @@
-package practice;
+package hackerrank;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -23,7 +23,7 @@ public class SherlockAndValidString {
 				Integer count = charMap.get(strArr[i]);
 				charMap.put(strArr[i], count + 1);
 			} else {
-				charMap.putIfAbsent(strArr[i], 1);
+				charMap.put(strArr[i], 1);
 			}
 		}
 
