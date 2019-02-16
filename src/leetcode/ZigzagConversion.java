@@ -48,29 +48,38 @@ public static String convert(String s, int numRows) {
             for(int m=0; m<ai.length; m++){
         		System.out.print(ai[m] + " ");
         	}
-            System.out.println();
+            System.out.println("");
+            System.out.println("Adding - " + ai.toString());
             final_list.add(ai);
         }
-        /*for(int n=0; n<final_list.size(); n++){
-        	Character[] temp_a = final_list.get(n);
-        	for(int m=0; m<temp_a.length; m++){
-        		System.out.print(temp_a[m] + " ");
+        
+        System.out.println();
+        String ans = "";
+                
+        for(int m=0; m<final_list.size(); m++){
+        	System.out.println(final_list.get(m));
+        	/*Character[] temp_a = final_list.get(m);
+        	for(int n=0; n<temp_a.length; n++){
+        		System.out.print(temp_a[n] + " ");
         	}
-        	System.out.println();
+        	System.out.println();*/
+        }
+        
+        /*int rowCtr = 0;
+        int mapCtr = 0;
+        while(rowCtr<numRows){
+        	while(mapCtr<final_list.size()){
+        		Character[] temp_a = final_list.get(mapCtr);
+        		if(temp_a[rowCtr] != ' '){
+            		ans = ans + String.valueOf(temp_a[rowCtr]);
+            	}
+            	mapCtr++;
+        	}    
+        	mapCtr = 0;
+        	rowCtr++;
         }*/
         
-        String ans = "";
-        for(int n=0; n<numRows; n++){
-            for(int j=0; j<final_list.size(); j++){
-                Character[] temp_a = final_list.get(j);
-                for(int m=0; m<final_list.size(); m++){
-                	if(temp_a[n] != ' '){
-                        ans = ans + temp_a[n];
-                    }
-                }
-            }
-            System.out.println(ans);
-        } 
+        
     return ans;
     }
 
